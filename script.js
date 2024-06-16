@@ -31,29 +31,20 @@ function isPrime(num){
     isPrime(4);
     isPrime(5);
 //3.Write a function sumEvenNumbers(start, end) that takes two integers start and end, and returns the sum of all even numbers in the inclusive range from start to end.
-function sumEvenNumbers(start, end){
+function sumEvenNumbers(start,end)
+{
     let sum=0
-   const evenArray=[]
     for(let i=start;i<=end;i++)
         {
-            if(i%2==0)
+            if(i%2===0)
                 {
-                   evenArray.push(i)
-                }
+             sum+=i                }
 
         }
-        console.log(evenArray)
-        
-        for(let j=0;j<5;j++)
-            {
-                sum=sum+evenArray[j]
-                
-            }
-            
-            console.log(sum)
+       return sum
 
 }
-sumEvenNumbers(1,5)
+console.log('sum of even numbers='+sumEvenNumbers(1,5))
 
 
 
@@ -89,9 +80,22 @@ function myFunction2() {
 //6. Write a JavaScript function to get the values of First and Last names of the following form.
 function myFunction3(){
     let x=document.getElementById("FN").value
+    debugger
 
     alert(x)
     console.log(x)
 }
 
 //7. Write a JavaScript program to display a random image (clicking on a button) from the following list.
+function getRandomImage() {  
+    //declare an array to store the images  
+    var randomImage = new Array();  
+      
+    //insert the URL of images in array  
+    randomImage[0] =  "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+      
+    randomImage[1] = "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg";  
+    randomImage[2] = "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg";  
+    var number = Math.floor(Math.random()*randomImage.length);  
+    return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" />';
+}
