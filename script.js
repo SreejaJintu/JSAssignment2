@@ -36,7 +36,7 @@ function sumEvenNumbers(start,end)
     let sum=0
     for(let i=start;i<=end;i++)
         {
-            if(i%2===0)
+            if(i%2==0)
                 {
              sum+=i                }
 
@@ -79,11 +79,11 @@ function myFunction2() {
 }
 //6. Write a JavaScript function to get the values of First and Last names of the following form.
 function myFunction3(){
-    let x=document.getElementById("FN").value
-    debugger
+    var x = document.getElementById("form1").elements[0].value;
+  
+    document.getElementById("demo").innerHTML = x;
 
-    alert(x)
-    console.log(x)
+
 }
 
 //7. Write a JavaScript program to display a random image (clicking on a button) from the following list.
