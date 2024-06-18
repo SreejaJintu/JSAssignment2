@@ -80,8 +80,10 @@ function myFunction2() {
 //6. Write a JavaScript function to get the values of First and Last names of the following form.
 function myFunction3(){
     var x = document.getElementById("form1").elements[0].value;
+        var y = document.getElementById("form1").elements[1].value;
+
   
-    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo").innerHTML = x+"   "+y;
 
 
 }
