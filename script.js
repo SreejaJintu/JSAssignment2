@@ -24,9 +24,9 @@ function isPrime(num){
             }
         }
         if (flag == true)
-            console.log(num + " is prime");
+            console.log(true);
         else
-            console.log(num + " is not prime");
+            console.log(false);
     }
     isPrime(4);
     isPrime(5);
