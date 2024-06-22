@@ -24,9 +24,9 @@ function isPrime(num){
             }
         }
         if (flag == true)
-            console.log(true);
+            return true
         else
-            console.log(false);
+           return false
     }
     isPrime(4);
     isPrime(5);
